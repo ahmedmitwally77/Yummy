@@ -1,0 +1,117 @@
+.inner:hover .layer{
+  top: 0%;
+}
+
+.inner .layer{
+  width: 100%;
+  height: 100%;
+  background-color: #f9f6f6ca;
+  top: 100%;
+  transition: .5s;
+}
+
+.sideBar{
+  width: 220px;
+  height: 100%;
+  bottom: 0;
+  background-color: #f9f6f6ca;
+  transition: .7s;
+}
+
+.sideBar .nav li a{
+  cursor: pointer !important;
+  transition: 0.4s;
+}
+
+.sideBar .nav li a:hover{
+  color: #f9f6f6ca;
+}
+
+.header{
+  width: 60px;
+  background-color: white;
+}
+.show-details,#home,#search,#categories,#areas,#ingredients,#contact-us{
+  min-height: 100vh;
+}
+.recipes{
+  width: fit-content;
+  border-radius: 5px;
+  background-color: #CFF4FC;
+  padding: 5px;
+  color: black;
+}
+
+.exist-meal .exist{
+  cursor: pointer;
+  padding: 10px;
+  transition:all 0.8s;
+  border-radius: 50%;
+  border: 1px solid transparent;
+}
+.exist:hover{
+  color: yellow;
+  border: 1px solid yellow;
+}
+.loader {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  display: inline-block;
+  position: relative;
+  border: 3px solid;
+  border-color: #FFF #FFF transparent transparent;
+  box-sizing: border-box;
+  animation: rotation 1s linear infinite;
+}
+.loader::after,
+.loader::before {
+  content: '';  
+  box-sizing: border-box;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  border: 3px solid;
+  border-color: transparent transparent #FF3D00 #FF3D00;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  box-sizing: border-box;
+  animation: rotationBack 0.5s linear infinite;
+  transform-origin: center center;
+}
+.loader::before {
+  width: 32px;
+  height: 32px;
+  border-color: #FFF #FFF transparent transparent;
+  animation: rotation 1.5s linear infinite;
+}
+    
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+} 
+@keyframes rotationBack {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+    
+.spinner-layer{
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 9999;
+  display: block;
+}
+body{
+  overflow-x: hidden;
+}
