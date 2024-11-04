@@ -134,7 +134,7 @@ async function showDetails(id){
   }
 
   let cartona=`
-          <div class="exist-meal icon p-2 text-end position-absolute top-0 end-0 "><i class="fa-solid fa-x fa-1x"></i> </div>
+          <div class="exist-meal icon p-2 text-end position-absolute top-0 end-0 "><i class="fa-solid exist fa-x fa-1x"></i> </div>
           <div class="col-md-4">
             <img src="${meal.strMealThumb}" class="w-100" alt="">
             <h3 class="mt-3">${meal.strMeal}</h3>
