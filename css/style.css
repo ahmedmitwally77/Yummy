@@ -17,6 +17,10 @@
   background-color: #f9f6f6ca;
   transition: .7s;
 }
+.col-md-3{
+  cursor: pointer;
+}
+
 
 .sideBar .nav li a{
   cursor: pointer !important;
