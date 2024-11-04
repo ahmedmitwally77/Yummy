@@ -17,7 +17,7 @@
   background-color: #f9f6f6ca;
   transition: .7s;
 }
-.col-md-3{
+.col-md-3 > div{
   cursor: pointer;
 }
 
